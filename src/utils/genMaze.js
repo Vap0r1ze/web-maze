@@ -1,6 +1,6 @@
 // Credit: https://github.com/dstromberg2/maze-generator
 
-export default function genMaze (x, y) {
+module.exports = function genMaze (x, y) {
   var totalCells = x * y
   var cells = new Array()
   var unvis = new Array()

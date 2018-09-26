@@ -1,13 +1,5 @@
 <template>
   <div class="overflow-y-hidden flex items-center justify-center">
-    <!-- <div class="maze h-full flex flex-col">
-      <div v-for="y in (maze.length * 2 + 1)" :key="y" class="flex-1 flex">
-        <div v-for="x in (maze[0].length * 2 + 1)" :key="x" class="flex-1" :class="{
-          'maze-wall': mazeWall(x - 1, y - 1),
-          'maze-player': player.x === x - 1 && player.y === y - 1
-        }"></div>
-      </div>
-    </div> -->
     <canvas class="maze shadow" ref="canvas"/>
   </div>
 </template>
@@ -64,10 +56,10 @@ export default {
       }
     },
     onKeyDown (e) {
-      let oldPlayer = {
-        x: this.player.x,
-        y: this.player.y
-      }
+      // let oldPlayer = {
+      //   x: this.player.x,
+      //   y: this.player.y
+      // }
       switch (e.code) {
         case 'KeyW':
         case 'ArrowUp':
