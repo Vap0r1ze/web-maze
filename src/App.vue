@@ -1,10 +1,10 @@
 <template>
-  <div id="app" class="min-h-screen flex flex-col overflow-y-hidden">
+  <div id="app" class="h-screen flex flex-col">
     <div class="top-bar flex items-center shadow-md px-4 h-12">
       <p class="flex-1 text-center text-lg">Level {{ level }}</p>
       <i class="material-icons hamburger cursor-pointer" @click="menuOpen = true">menu</i>
     </div>
-    <div class="flex-1 flex flex-col">
+    <div class="flex-1 flex flex-col h-full">
       <Maze v-if="maze" :maze="maze" class="flex-1" ref="maze" @win="win"/>
       <div v-if="intermission" class="intermission absolute pin h-full">
         <div class="flex flex-col justify-center items-center h-full">

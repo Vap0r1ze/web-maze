@@ -1,9 +1,7 @@
 <template>
   <div class="menu scroller" :class="[`px-${pad}`]">
     <div class="h-full" :class="[`py-${pad}`]">
-      <!-- <div class="">
-        <p class="">1v1</p>
-      </div> -->
+      <p class="text-center text-4xl select-none opacity-25 mt-12">Menu in progress</p>
     </div>
   </div>
 </template>
@@ -12,7 +10,6 @@
 export default {
   props: ['padding'],
   data () {
-    console.log(this.padding)
     return {
       pad: this.padding || 0
     }
