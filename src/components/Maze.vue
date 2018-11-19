@@ -135,21 +135,3 @@ export default {
   }
 }
 </script>
-
-<style>
-.maze g rect {
-  fill: none;
-}
-.maze rect.wall {
-  fill: #2a2c31;
-}
-.maze rect.start {
-  fill: #43b581;
-}
-.maze rect.end {
-  fill: #f04747;
-}
-.maze rect.player {
-  fill: #7289da;
-}
-</style>
